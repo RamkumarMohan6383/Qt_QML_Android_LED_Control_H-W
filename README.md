@@ -1,6 +1,6 @@
 # Qt_QML_Android_LED_Control_H-W
 
-1. Run the below command to generate gpiod file 
+1 . Run the below command to generate gpiod file 
 
 E:\MyFiles\QT_Projects\Hardware_PWM\gpio_daemon>"C:\Users\Dell\AppData\Local\Android\Sdk\ndk\27.0.12077973\ndk-build.cmd" 
 
@@ -12,11 +12,11 @@ E:\MyFiles\QT_Projects\Hardware_PWM\gpio_daemon>"C:\Users\Dell\AppData\Local\And
 
 [arm64-v8a] Install        : gpiod => libs/arm64-v8a/gpiod 
 
-2.Move gpiod file windows to android 
+2 . Move gpiod file windows to android 
 
 adb push E:\MyFiles\QT_Projects\Hardware_PWM\gpio_daemon\libs\arm64-v8a\gpiod /data/local/tmp/ 
 
-3.Make executable in android turmex apk. 
+3 . Make executable in android turmex apk. 
 
 su -c chmod 755 /data/local/tmp/gpiod 
 
