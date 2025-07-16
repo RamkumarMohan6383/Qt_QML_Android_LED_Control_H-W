@@ -22,7 +22,15 @@ su -c chmod 755 /data/local/tmp/gpiod
 
 su -c /data/local/tmp/gpiod & 
 
+✅ 1. Check if gpiod exists and is executable
 
+In Termux, run:
+
+ls -l /data/local/tmp/gpiod
+
+Expected output:
+
+-rwxr-xr-x 1 root root ... /data/local/tmp/gpiod
 
 # Auto start get Permission
 
