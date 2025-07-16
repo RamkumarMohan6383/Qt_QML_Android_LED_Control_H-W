@@ -32,6 +32,30 @@ Expected output:
 
 -rwxr-xr-x 1 root root ... /data/local/tmp/gpiod
 
+# Remove gpiod in Android Termux
+Find and Kill the Running gpiod Process
+
+ps | grep gpiod
+
+This may show something like:
+
+root        776     1   ...   S   gpiod
+
+Now kill it using the PID (e.g., 776):
+
+su -c kill 776
+
+Or simply:
+
+su -c pkill gpiod
+
+su -c pkill gpiod
+
+su -c rm /data/local/tmp/gpiod
+
+su -c rm /data/local/tmp/gpiod.sock
+
+
 # Auto start get Permission
 
 Write script in Windows 99gpiod.sh
